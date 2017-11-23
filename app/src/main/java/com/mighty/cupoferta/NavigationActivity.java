@@ -12,9 +12,11 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.mighty.cupoferta.ui.OnNavListener;
+import com.mighty.cupoferta.ui.fragments.InicioFragment;
 import com.mighty.cupoferta.ui.fragments.ConfiguracionFragment;
 import com.mighty.cupoferta.ui.fragments.MedallasFragment;
 import com.mighty.cupoferta.ui.fragments.MisCuponesFragment;
+import com.mighty.cupoferta.ui.fragments.SobreAppFragment;
 
 public class NavigationActivity extends AppCompatActivity implements OnNavListener {
 
@@ -26,8 +28,13 @@ public class NavigationActivity extends AppCompatActivity implements OnNavListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
+
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.frame, new InicioFragment());
+        fragmentTransaction.commit();
 
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
 
@@ -40,23 +47,29 @@ public class NavigationActivity extends AppCompatActivity implements OnNavListen
                 drawerLayout.closeDrawers();
 
                 switch (menuItem.getItemId()) {
-                    case R.id.menuAndroid:
+                    case R.id.menuInicio:
                         changeFragment(0);
                         return true;
-                    case R.id.menuAndroidBug:
+                    case R.id.menuCupones:
                         changeFragment(1);
                         return true;
-                    case R.id.menuAndroidHelp:
+                    case R.id.menuMedallas:
                         changeFragment(2);
+                        return true;
+                    case R.id.menuConfiguracion:
+                        changeFragment(3);
+                        return true;
+                    case R.id.menuApp:
+                        changeFragment(4);
                         return true;
                     default:
                         return true;
                 }
             }
         });
+
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.openDrawer, R.string.closeDrawer) {
-
             @Override
             public void onDrawerClosed(View drawerView) {
                 super.onDrawerClosed(drawerView);
@@ -76,13 +89,19 @@ public class NavigationActivity extends AppCompatActivity implements OnNavListen
         Fragment fragment = null;
         switch (i) {
             case 0:
-                fragment = new MisCuponesFragment();
+                fragment = new InicioFragment();
                 break;
             case 1:
-                fragment = new MedallasFragment();
+                fragment = new MisCuponesFragment();
                 break;
             case 2:
+                fragment = new MedallasFragment();
+                break;
+            case 3:
                 fragment = new ConfiguracionFragment();
+                break;
+            case 4:
+                fragment = new SobreAppFragment();
                 break;
         }
         if (fragment != null) {

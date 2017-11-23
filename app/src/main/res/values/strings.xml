@@ -3,4 +3,13 @@
     <string name="closeDrawer">Navigation View</string>
     <string name="openDrawer">Navigation View Closed</string>
     <string name="ingresar">Ingresar</string>
+    <string name="inicio">Inicio</string>
+    <string name="miscupones">Mis cupones</string>
+    <string name="medallas">Medallas</string>
+    <string name="configuracion">Configuación</string>
+    <string name="sobreapp">Sobre el app</string>
+    <string name="salir">Cerrar Sesión</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

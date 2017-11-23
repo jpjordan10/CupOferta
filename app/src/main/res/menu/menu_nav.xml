@@ -1,27 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
     <group android:checkableBehavior="single">
-
         <item
-            android:id="@+id/menuAndroid"
+            android:id="@+id/menuInicio"
             android:checked="false"
-            android:icon="@drawable/ic_android_black_48dp"
-            android:title="Android" />
-
+            android:title="@string/inicio" />
         <item
-            android:id="@+id/menuAndroidBug"
+            android:id="@+id/menuCupones"
             android:checked="false"
-            android:icon="@drawable/ic_bug_report_black_48dp"
-            android:title="Android Bug" />
-
+            android:title="@string/miscupones" />
         <item
-            android:id="@+id/menuAndroidHelp"
+            android:id="@+id/menuMedallas"
             android:checked="false"
-            android:icon="@drawable/ic_help_black_48dp"
-            android:title="Android Help" />
-
-
+            android:title="@string/medallas" />
+        <item
+            android:id="@+id/footer"
+            android:title="">
+            <menu>
+                <item
+                    android:id="@+id/menuConfiguracion"
+                    android:checked="false"
+                    android:title="@string/configuracion" />
+                <item
+                    android:id="@+id/menuApp"
+                    android:checked="false"
+                    android:title="@string/sobreapp" />
+                <item
+                    android:id="@+id/cerrarSesion"
+                    android:checked="false"
+                    android:title="@string/salir" />
+            </menu>
+        </item>
     </group>
 </menu>
 

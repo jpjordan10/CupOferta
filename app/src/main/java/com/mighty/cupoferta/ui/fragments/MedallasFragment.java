@@ -64,8 +64,12 @@ public class MedallasFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_medallas, container,
+                false);
+        getActivity().setTitle(R.string.medallas);
+        return rootView;
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_medallas, container, false);
+        //return inflater.inflate(R.layout.fragment_medallas, container, false);
     }
 
 

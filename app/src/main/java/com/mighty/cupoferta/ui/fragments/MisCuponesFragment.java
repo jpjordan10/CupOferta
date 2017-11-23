@@ -64,8 +64,12 @@ public class MisCuponesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_mis_cupones, container,
+                false);
+        getActivity().setTitle(R.string.miscupones);
+        return rootView;
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mis_cupones, container, false);
+        //return inflater.inflate(R.layout.fragment_mis_cupones, container, false);
     }
 
 
