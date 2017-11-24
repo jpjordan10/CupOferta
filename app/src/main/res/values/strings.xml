@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">CupOferta</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasenia">Contraseña</string>
     <string name="closeDrawer">Navigation View</string>
     <string name="openDrawer">Navigation View Closed</string>
     <string name="ingresar">Ingresar</string>
+    <string name="ingresarFB">Ingresar con Facebook</string>
+    <string name="registrate">Registrate</string>
     <string name="inicio">Inicio</string>
     <string name="miscupones">Mis cupones</string>
     <string name="medallas">Medallas</string>
