@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:gravity="center"
-        android:top="5dp"
-        android:bottom="5dp"
-        android:left="2dp"
-        android:right="2dp"
-        android:drawable="@drawable/signup_bg_bordered"
+        android:layout_centerInParent="true"
         android:width="350dp"
         android:height="40dp"
-        android:layout_centerInParent="true"/>
+        android:bottom="5dp"
+        android:drawable="@drawable/signup_bg_bordered"
+        android:gravity="center"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="5dp" />
 </layer-list>
