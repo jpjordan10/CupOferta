@@ -5,4 +5,6 @@
     <color name="colorAccent">#FAFAFA</color>
     <color name="colorHeader">#0174DF</color>
     <color name="border">#FAFAFA</color>
+    <color name="colorFB">#3B5998</color>
+    <color name="colorsignup">#006E6F</color>
 </resources>

@@ -12,10 +12,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button btnIngresar = (Button) findViewById(R.id.btnIngresar);
+        Button btnRegistrate = (Button) findViewById(R.id.btnRegistrate);
         btnIngresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, NavigationActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnRegistrate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
                 startActivity(intent);
             }
         });

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:gravity="center"
+        android:top="5dp"
+        android:bottom="5dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:drawable="@drawable/facebook_bg_bordered"
+        android:width="350dp"
+        android:height="40dp"
+        android:layout_centerInParent="true"/>
+</layer-list>

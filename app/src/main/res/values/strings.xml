@@ -1,11 +1,16 @@
 <resources>
     <string name="app_name">CupOferta</string>
-    <string name="usuario">Usuario</string>
+    <string name="email">E-mail</string>
     <string name="contrasenia">Contraseña</string>
+    <string name="contrasenia2">Repita contraseña</string>
+    <string name="nombres">Nombres</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="dni">DNI</string>
     <string name="closeDrawer">Navigation View</string>
     <string name="openDrawer">Navigation View Closed</string>
     <string name="ingresar">Ingresar</string>
     <string name="ingresarFB">Ingresar con Facebook</string>
+    <string name="registrarFB">Registrarse con Facebook</string>
     <string name="registrate">Registrate</string>
     <string name="inicio">Inicio</string>
     <string name="miscupones">Mis cupones</string>
@@ -13,6 +18,7 @@
     <string name="configuracion">Configuación</string>
     <string name="sobreapp">Sobre el app</string>
     <string name="salir">Cerrar Sesión</string>
+    <string name="acepto">Acepto términos y condiciones</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

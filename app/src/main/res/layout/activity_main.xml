@@ -3,82 +3,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/colorPrimaryDark"
-    tools:context=".MainActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
     android:paddingLeft="2dp"
     android:paddingRight="2dp"
-    android:focusable="true"
-    android:focusableInTouchMode="true">
+    android:paddingTop="250dp"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:focusable="true"
-        android:focusableInTouchMode="true">
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/username_text_input_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColorHint="@color/border"
-        >
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/etUsername"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:textColorHint="@color/border">
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/border"
+                android:ems="20"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/border" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:textColorHint="@color/border">
+
+            <EditText
+                android:id="@+id/etContrasenia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/border"
+                android:ems="20"
+                android:hint="@string/contrasenia"
+                android:inputType="textPassword"
+                android:textColor="@color/border" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnIngresar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:ems="20"
-            android:hint="@string/usuario"
-            android:textColor="@color/border"
-            android:backgroundTint="@color/border"/>
+            android:background="@drawable/transparent_bg_bordered_button"
+            android:text="@string/ingresar"
+            android:textColor="@color/border" />
 
-    </android.support.design.widget.TextInputLayout>
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/password_text_input_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColorHint="@color/border">
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/border" />
 
-        <EditText
-            android:id="@+id/etContrasenia"
-            android:inputType="textPassword"
+        <Button
+            android:id="@+id/btnIngresarFB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:ems="20"
-            android:hint="@string/contrasenia"
-            android:textColor="@color/border"
-            android:backgroundTint="@color/border"/>
+            android:background="@drawable/facebook_bg_bordered_button"
+            android:text="@string/ingresarFB"
+            android:textColor="@color/border" />
 
-    </android.support.design.widget.TextInputLayout>
-    <Button
-        android:id="@+id/btnIngresar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/transparent_bg_bordered_button"
-        android:text="@string/ingresar"
-        android:textColor="@color/border"/>
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="1dp"
-        android:background="@color/border" />
-    <Button
-        android:id="@+id/btnIngresarFB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/transparent_bg_bordered_button"
-        android:text="@string/ingresarFB"
-        android:textColor="@color/border"/>
-    <Button
-        android:id="@+id/btnRegistrate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/transparent_bg_bordered_button"
-        android:text="@string/registrate"
-        android:textColor="@color/border"/>
-</LinearLayout>
+        <Button
+            android:id="@+id/btnRegistrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signup_bg_bordered_button"
+            android:text="@string/registrate"
+            android:textColor="@color/border" />
+    </LinearLayout>
 </LinearLayout>
