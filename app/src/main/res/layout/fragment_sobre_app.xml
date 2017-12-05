@@ -2,11 +2,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorFB"
     tools:context="com.mighty.cupoferta.ui.fragments.SobreAppFragment">
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Sobre App" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+   Acerca de Cup Oferta:"
+            android:textColor="@color/cardview_light_background"
+            >
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/cardview_light_background"
+                android:text="
+          Aplicación diseñada y desarrollada por los alumnos:
+          Jean Pierre Jordan, Diego Andrés Cotrina y Kenyiro
+          Yutaka Castro para el laboratorio de Desarrollo de
+          aplicaciones Móviles I. "/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
 
 </FrameLayout>
