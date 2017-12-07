@@ -1,0 +1,46 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombres": "Jean Pierre",
+      "apellidos": "Jordan Solis",
+      "email": "jpjordan@gmail.com",
+      "dni": 73755436,
+      "password": "admin1"
+    },
+    {
+      "nombres": "Diego Andres",
+      "apellidos": "Cotrina Solorzano",
+      "email": "diancotrina@gmail.com",
+      "dni": 75486974,
+      "password": "admin2",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "nombres": "Kenyiro",
+      "apellidos": "Castro Lopez",
+      "email": "kenyirocastro@gmail.com",
+      "dni": 72584268,
+      "password": "admin3"
+    }
+  ],
+  "cupones": [
+    {
+      "id": "YLabhnB",
+      "empresa": "KFC",
+      "titulo": "Mega Online",
+      "descripcion": "9 Piezas de pollo, 1 Papa Familiar, 6 Nuggets, 1 Ensalada Familiar, 1 Gaseosa de 1.5Lts",
+      "precio": 55.9,
+      "imgUrl": "https://www.kfc.com.pe/Imagenes/800x275/BOTONERA%20MEGA%20ONLINE%202.jpg"
+    },
+    {
+      "id": "LLzwhnA",
+      "empresa": "Bembos",
+      "titulo": "Promo Clásica",
+      "descripcion": "Clásica Mediana + 1 Papa Mediana + 1 Gaseosa 500ml",
+      "precio": 13.9,
+      "imgUrl": "http://www.bembos.com.pe/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/o/k/okpromoclasica__2_.png"
+    }
+  ]
+}

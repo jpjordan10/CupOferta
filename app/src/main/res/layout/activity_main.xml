@@ -9,7 +9,7 @@
     android:orientation="vertical"
     android:paddingLeft="2dp"
     android:paddingRight="2dp"
-    android:paddingTop="250dp"
+    android:paddingTop="200dp"
     tools:context=".MainActivity">
 
     <LinearLayout
