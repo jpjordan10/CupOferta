@@ -85,14 +85,6 @@
             android:background="@color/border" />
 
         <Button
-            android:id="@+id/btnIngresarFB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/facebook_bg_bordered_button"
-            android:text="@string/ingresarFB"
-            android:textColor="@color/border" />
-
-        <Button
             android:id="@+id/btnRegistrate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

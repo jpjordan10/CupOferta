@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.mighty.cupoferta.model.Cupon;
+
 import java.util.ArrayList;
 
 /**

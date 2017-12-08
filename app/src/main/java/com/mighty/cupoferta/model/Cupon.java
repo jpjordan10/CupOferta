@@ -1,4 +1,4 @@
-package com.mighty.cupoferta;
+package com.mighty.cupoferta.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

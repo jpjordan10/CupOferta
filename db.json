@@ -1,12 +1,13 @@
 {
-  "usuarios": [
+  "usuario": [
     {
-      "id": 1,
       "nombres": "Jean Pierre",
       "apellidos": "Jordan Solis",
       "email": "jpjordan@gmail.com",
       "dni": 73755436,
-      "password": "admin1"
+      "password": "admin1",
+      "userId": 1,
+      "id": 101
     },
     {
       "nombres": "Diego Andres",
@@ -14,15 +15,17 @@
       "email": "diancotrina@gmail.com",
       "dni": 75486974,
       "password": "admin2",
-      "id": 2
+      "userId": 2,
+      "id": 102
     },
     {
-      "id": 3,
       "nombres": "Kenyiro",
       "apellidos": "Castro Lopez",
       "email": "kenyirocastro@gmail.com",
       "dni": 72584268,
-      "password": "admin3"
+      "password": "admin3",
+      "userId": 3,
+      "id": 103
     }
   ],
   "cupones": [
