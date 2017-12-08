@@ -4,9 +4,9 @@
     android:layout_height="match_parent"
     tools:context="com.mighty.cupoferta.ui.fragments.InicioFragment">
 
-    <TextView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/card_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Inicio" />
-
+        android:scrollbars="vertical" />
 </FrameLayout>

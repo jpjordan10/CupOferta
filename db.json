@@ -42,5 +42,107 @@
       "precio": 13.9,
       "imgUrl": "http://www.bembos.com.pe/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/o/k/okpromoclasica__2_.png"
     }
+  ],
+  "departamentos": [
+    {
+      "id": "001",
+      "nombre": "Amazonas"
+    },
+    {
+      "id": "002",
+      "nombre": "Ancash"
+    },
+    {
+      "id": "003",
+      "nombre": "Apurimac"
+    },
+    {
+      "id": "004",
+      "nombre": "Arequipa"
+    },
+    {
+      "id": "005",
+      "nombre": "Ayacucho"
+    },
+    {
+      "id": "006",
+      "nombre": "Cajamarca"
+    },
+    {
+      "id": "007",
+      "nombre": "Callao"
+    },
+    {
+      "id": "008",
+      "nombre": "Cusco"
+    },
+    {
+      "id": "009",
+      "nombre": "Huancavelica"
+    },
+    {
+      "id": "010",
+      "nombre": "Huanuco"
+    },
+    {
+      "id": "011",
+      "nombre": "Ica"
+    },
+    {
+      "id": "012",
+      "nombre": "Junin"
+    },
+    {
+      "id": "013",
+      "nombre": "La libertad"
+    },
+    {
+      "id": "014",
+      "nombre": "Lambayeque"
+    },
+    {
+      "id": "015",
+      "nombre": "Lima"
+    },
+    {
+      "id": "016",
+      "nombre": "Loreto"
+    },
+    {
+      "id": "017",
+      "nombre": "Madre de Dios"
+    },
+    {
+      "id": "018",
+      "nombre": "Moquegua"
+    },
+    {
+      "id": "019",
+      "nombre": "Pasco"
+    },
+    {
+      "id": "020",
+      "nombre": "Piura"
+    },
+    {
+      "id": "021",
+      "nombre": "Puno"
+    },
+    {
+      "id": "022",
+      "nombre": "San martin"
+    },
+    {
+      "id": "023",
+      "nombre": "Tacna"
+    },
+    {
+      "id": "024",
+      "nombre": "Tumbes"
+    },
+    {
+      "id": "025",
+      "nombre": "Ucayali"
+    }
   ]
 }
