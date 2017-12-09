@@ -12,6 +12,6 @@ import retrofit2.http.GET;
  */
 
 public interface RequestInterface {
-    @GET("/cupones//YLabhnB")
+    @GET("/cupones")
     Call<JSONResponse> getJSON();
 }

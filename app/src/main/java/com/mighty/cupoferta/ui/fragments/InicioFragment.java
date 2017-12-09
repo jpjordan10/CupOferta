@@ -10,8 +10,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.mighty.cupoferta.model.Coupon;
 import com.mighty.cupoferta.model.Cupon;
 import com.mighty.cupoferta.CuponAdapter;
 import com.mighty.cupoferta.JSONResponse;
@@ -30,11 +33,12 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class InicioFragment extends Fragment {
-    /*
+    private String urlCupones = "http://192.168.1.42:3000/db/";
     private RecyclerView recyclerView;
-    private ArrayList<Cupon> data;
+    private List<Coupon> mCouponList = new ArrayList<>();
+
+    //private ArrayList<Cupon> data;
     private CuponAdapter adapter;
-    */
     private OnNavListener mListener;
 
     public InicioFragment() {
@@ -54,13 +58,22 @@ public class InicioFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         View rootView = inflater.inflate(R.layout.fragment_inicio, container,
                 false);
         getActivity().setTitle(R.string.inicio);
         //initViews(rootView);
-
+        recyclerView = (RecyclerView)  rootView.findViewById(R.id.card_recycler_view);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        getObtenerCupones(rootView);
         return rootView;
+
     }
+
+    private void getObtenerCupones(View rootView) {
+        //RequestQueue requestQueue = Volley.newRequestQueue(this)
+    }
+
 
     @Override
     public void onAttach(Context context) {
@@ -78,13 +91,13 @@ public class InicioFragment extends Fragment {
         super.onDetach();
         mListener = null;
     }
-    /*
+
     private void initViews(View rootView){
         recyclerView = (RecyclerView) rootView.findViewById(R.id.card_recycler_view);
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setAdapter(new CuponAdapter(new ArrayList<Cupon>()));
+        //recyclerView.setAdapter(new CuponAdapter(new ArrayList<Cupon>()));
         loadJSON();
     }
 
@@ -102,8 +115,8 @@ public class InicioFragment extends Fragment {
             @Override
             public void onResponse(Call<JSONResponse> call, Response<JSONResponse> response) {
                 JSONResponse jsonResponse = response.body();
-                data = new ArrayList<>(Arrays.asList(jsonResponse.getCupon()));
-                adapter = new CuponAdapter(data);
+                //data = new ArrayList<>(Arrays.asList(jsonResponse.getCupon()));
+                //adapter = new CuponAdapter(data);
                 recyclerView.setAdapter(adapter);
             }
 
@@ -113,5 +126,4 @@ public class InicioFragment extends Fragment {
             }
         });
     }
-    */
 }

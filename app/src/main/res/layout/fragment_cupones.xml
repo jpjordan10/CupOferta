@@ -2,11 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mighty.cupoferta.ui.fragments.InicioFragment">
+    tools:context="com.mighty.cupoferta.ui.fragments.CuponesFragment">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/card_recycler_viewa"
+        android:id="@+id/card_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical" />
+
 </FrameLayout>

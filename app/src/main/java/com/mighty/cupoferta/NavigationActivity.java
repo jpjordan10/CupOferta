@@ -12,7 +12,8 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.mighty.cupoferta.ui.OnNavListener;
-import com.mighty.cupoferta.ui.fragments.InicioFragment;
+import com.mighty.cupoferta.ui.fragments.CuponesFragment;
+//import com.mighty.cupoferta.ui.fragments.InicioFragment;
 import com.mighty.cupoferta.ui.fragments.ConfiguracionFragment;
 import com.mighty.cupoferta.ui.fragments.MedallasFragment;
 import com.mighty.cupoferta.ui.fragments.MisCuponesFragment;
@@ -33,7 +34,7 @@ public class NavigationActivity extends AppCompatActivity implements OnNavListen
         setSupportActionBar(toolbar);
 
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.frame, new InicioFragment());
+        fragmentTransaction.replace(R.id.frame, new CuponesFragment());
         fragmentTransaction.commit();
 
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
@@ -89,7 +90,7 @@ public class NavigationActivity extends AppCompatActivity implements OnNavListen
         Fragment fragment = null;
         switch (i) {
             case 0:
-                fragment = new InicioFragment();
+                fragment = new CuponesFragment();
                 break;
             case 1:
                 fragment = new MisCuponesFragment();
