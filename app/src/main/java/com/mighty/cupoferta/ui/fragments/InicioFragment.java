@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.mighty.cupoferta.model.Cupon;
 import com.mighty.cupoferta.CuponAdapter;
 import com.mighty.cupoferta.JSONResponse;
@@ -19,6 +21,7 @@ import com.mighty.cupoferta.ui.OnNavListener;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -27,9 +30,11 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class InicioFragment extends Fragment {
+    /*
     private RecyclerView recyclerView;
     private ArrayList<Cupon> data;
     private CuponAdapter adapter;
+    */
     private OnNavListener mListener;
 
     public InicioFragment() {
@@ -52,7 +57,8 @@ public class InicioFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_inicio, container,
                 false);
         getActivity().setTitle(R.string.inicio);
-        initViews(rootView);
+        //initViews(rootView);
+
         return rootView;
     }
 
@@ -72,6 +78,7 @@ public class InicioFragment extends Fragment {
         super.onDetach();
         mListener = null;
     }
+    /*
     private void initViews(View rootView){
         recyclerView = (RecyclerView) rootView.findViewById(R.id.card_recycler_view);
         recyclerView.setHasFixedSize(true);
@@ -82,9 +89,12 @@ public class InicioFragment extends Fragment {
     }
 
     private void loadJSON(){
+        Gson gson = new GsonBuilder()
+                .setLenient()
+                .create();
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("http://192.168.1.42:3000/")
-                .addConverterFactory(GsonConverterFactory.create())
+                .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
         RequestInterface request = retrofit.create(RequestInterface.class);
         Call<JSONResponse> call = request.getJSON();
@@ -103,4 +113,5 @@ public class InicioFragment extends Fragment {
             }
         });
     }
+    */
 }

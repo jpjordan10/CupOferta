@@ -4,27 +4,24 @@
       "nombres": "Jean Pierre",
       "apellidos": "Jordan Solis",
       "email": "jpjordan@gmail.com",
-      "dni": 73755436,
+      "dni": "73755436",
       "password": "admin1",
-      "userId": 1,
       "id": 101
     },
     {
       "nombres": "Diego Andres",
       "apellidos": "Cotrina Solorzano",
       "email": "diancotrina@gmail.com",
-      "dni": 75486974,
+      "dni": "75486974",
       "password": "admin2",
-      "userId": 2,
       "id": 102
     },
     {
       "nombres": "Kenyiro",
       "apellidos": "Castro Lopez",
       "email": "kenyirocastro@gmail.com",
-      "dni": 72584268,
+      "dni": "75486974",
       "password": "admin3",
-      "userId": 3,
       "id": 103
     }
   ],

@@ -8,21 +8,23 @@ public class Usuario {
     @SerializedName("nombres")
     @Expose
     private String nombres;
+
     @SerializedName("apellidos")
     @Expose
     private String apellidos;
+
     @SerializedName("email")
     @Expose
     private String email;
+
     @SerializedName("dni")
     @Expose
-    private Integer dni;
+    private String dni;
+
     @SerializedName("password")
     @Expose
     private String password;
-    @SerializedName("userId")
-    @Expose
-    private Integer userId;
+
     @SerializedName("id")
     @Expose
     private Integer id;
@@ -51,11 +53,11 @@ public class Usuario {
         this.email = email;
     }
 
-    public Integer getDni() {
+    public String getDni() {
         return dni;
     }
 
-    public void setDni(Integer dni) {
+    public void setDni(String dni) {
         this.dni = dni;
     }
 
@@ -67,14 +69,6 @@ public class Usuario {
         this.password = password;
     }
 
-    public Integer getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Integer userId) {
-        this.userId = userId;
-    }
-
     public Integer getId() {
         return id;
     }
@@ -83,4 +77,15 @@ public class Usuario {
         this.id = id;
     }
 
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "nombres='" + nombres + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", email='" + email + '\'' +
+                ", dni='" + dni + '\'' +
+                ", password='" + password + '\'' +
+                ", id=" + id +
+                '}';
+    }
 }
