@@ -1,6 +1,7 @@
 package com.mighty.cupoferta;
 
 import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -51,10 +52,28 @@ public class SignUpActivity extends AppCompatActivity {
                 String password = passwordet.getText().toString().trim();
                 if (!TextUtils.isEmpty(nombres) && !TextUtils.isEmpty(apellidos) && !TextUtils.isEmpty(email) && !TextUtils.isEmpty(dni) && !TextUtils.isEmpty(password)) {
                     sendUser(nombres, apellidos, email, dni, password);
+                    limpiarCasillas();
+                    Snackbar.make(v, "Usuario Registrado", Snackbar.LENGTH_LONG)
+                            .setAction("Iniciar Sesión", new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    Intent intent = new Intent(SignUpActivity.this, NavigationActivity.class);
+                                    startActivity(intent);
+                                }
+                            })
+                            .show();
                 }
             }
 
         });
+    }
+
+    private void limpiarCasillas() {
+        nombreset.setText("");
+        apellidoset.setText("");
+        emailet.setText("");
+        dniet.setText("");
+        passwordet.setText("");
     }
 
     private void sendUser(String nombres, String apellidos, String email, String dni, String password) {
