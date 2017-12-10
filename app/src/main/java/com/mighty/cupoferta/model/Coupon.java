@@ -1,27 +1,15 @@
 package com.mighty.cupoferta.model;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+/**
+ * Created by jeanp on 09/12/2017.
+ */
 
-public class Cupon {
-
-    @SerializedName("id")
-    @Expose
+public class Coupon {
     private String id;
-    @SerializedName("empresa")
-    @Expose
     private String empresa;
-    @SerializedName("titulo")
-    @Expose
     private String titulo;
-    @SerializedName("descripcion")
-    @Expose
     private String descripcion;
-    @SerializedName("precio")
-    @Expose
     private Double precio;
-    @SerializedName("imgUrl")
-    @Expose
     private String imgUrl;
 
     public String getId() {
@@ -72,4 +60,9 @@ public class Cupon {
         this.imgUrl = imgUrl;
     }
 
+    public Coupon(String empresa, String titulo, String descripcion) {
+        this.empresa = empresa;
+        this.titulo = titulo;
+        this.descripcion = descripcion;
+    }
 }
