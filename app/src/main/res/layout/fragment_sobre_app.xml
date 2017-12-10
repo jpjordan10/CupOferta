@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="
-   Acerca de Cup Oferta:"
+Acerca de la app OfferCup:"
             android:textColor="@color/cardview_light_background"
             >
 
@@ -28,14 +28,55 @@
                 android:layout_height="match_parent"
                 android:textColor="@color/cardview_light_background"
                 android:text="
-          Aplicación diseñada y desarrollada por los alumnos:
-          Jean Pierre Jordan, Diego Andrés Cotrina y Kenyiro
-          Yutaka Castro para el laboratorio de Desarrollo de
-          aplicaciones Móviles I. "/>
+OfferCup es una aplicacióm móvil diseñada e implementada
+para poder ofrecer a los usuarios cupones y ofertas sobre diferentes productos y servicios.
+
+"/>
 
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:src="@drawable/sobre_la_app_marcas"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/cardview_light_background"
+                android:text="
+Aplicación creada por los alumnos de Cibertec:
+"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    android:src="@drawable/fotos_grupo" />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:textColor="@color/cardview_light_background"
+                android:text="    Castro Kenyiro               Jordan Jean               Cotrina Diego"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/cardview_light_background"
+                android:text="©2017 Todos los derechos reservados."/>
         </LinearLayout>
-    </LinearLayout>
+   </LinearLayout>
 
 
 
