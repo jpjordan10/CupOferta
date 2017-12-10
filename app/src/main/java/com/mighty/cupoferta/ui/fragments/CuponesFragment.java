@@ -1,11 +1,9 @@
 package com.mighty.cupoferta.ui.fragments;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +15,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.mighty.cupoferta.CuponAdapter;
+import com.mighty.cupoferta.adapter.CuponAdapter;
 import com.mighty.cupoferta.R;
 import com.mighty.cupoferta.model.Coupon;
 import com.mighty.cupoferta.ui.OnNavListener;
@@ -82,25 +80,23 @@ public class CuponesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_cupones, container,
                 false);
         getActivity().setTitle(R.string.inicio);
-        recyclerView = (RecyclerView)  rootView.findViewById(R.id.card_recycler_view);
-        //recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView = (RecyclerView) rootView.findViewById(R.id.card_recycler_view);
         adapter = new CuponAdapter();
         recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 3));
-        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener(){
+        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 1));
+        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
-            public void onScrolled(RecyclerView rv, int dx, int dy){
-                super.onScrolled(rv, dx,dy);
-                if (dy>0){
+            public void onScrolled(RecyclerView rv, int dx, int dy) {
+                super.onScrolled(rv, dx, dy);
+                if (dy > 0) {
                     int itemsVisibles = rv.getLayoutManager().getChildCount();
                     int itemsTotales = rv.getLayoutManager().getItemCount();
-                    int primerItemVisible = ((GridLayoutManager)rv.getLayoutManager()).findFirstVisibleItemPosition();
-                    if (puedeCargar){
-                        if (itemsVisibles + primerItemVisible >= itemsTotales){
+                    int primerItemVisible = ((GridLayoutManager) rv.getLayoutManager()).findFirstVisibleItemPosition();
+                    if (puedeCargar) {
+                        if (itemsVisibles + primerItemVisible >= itemsTotales) {
                             puedeCargar = false;
                             getObtenerCupones(nextUrl);
                         }
@@ -138,7 +134,7 @@ public class CuponesFragment extends Fragment {
 
                                 adapter.setAddListCupones(miListaCupon);
                             }
-                        }catch (JSONException je) {
+                        } catch (JSONException je) {
                             puedeCargar = true;
                         }
                     }
